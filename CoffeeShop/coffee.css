@@ -1,0 +1,806 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    user-select: none;
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.581);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 8;
+}
+nav .logo{
+    background-image: url(/images/coffee1\ \(4\).jpg);
+    font-size: 3em;
+    margin-left: 3rem;
+    text-align: center;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+nav .logo h3{
+    font-weight: 900;
+}
+
+nav .hamContainer input{
+    display: none;
+}
+nav .navitems{
+    width: 700px;
+}
+nav .navitems ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+}
+nav .navitems ul li a{
+    text-decoration: none;
+    margin: 1rem;
+    text-transform: capitalize;
+    color: black;
+}
+nav .navitems ul li a:hover{
+    color: #fff;
+    border-bottom: 4px double crimson;
+    background: rgba(0, 0, 0, 0.427);
+    padding: 0.5rem;
+    border-radius: 30px;
+}
+
+.intro{
+    background-image: url(/images/coffee1\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+}
+
+.intro::after{
+    content: "";
+    position: absolute;
+    background: rgba(26, 25, 25, 0.343);
+    height: inherit;
+    width: inherit;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.introContent{
+    color: #fff;
+    text-transform: capitalize;
+    background: rgba(22, 21, 21, 0.545);
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.introContent h1{
+    font-size: 4em;
+}
+
+.introContent p{
+    font-size: 1.5em;
+}
+.servicesContainer{
+    margin: 6rem 2rem 3rem 2rem ;
+    display: flex;
+    padding: 2rem;
+}
+#service h2{
+    font-size: 3em;
+    text-align: center;
+    margin: 5% 0 0 40%;
+    border-bottom: 6px double crimson;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.servicesContainer .service{
+    background: crimson;
+    margin: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 5px 5px 8px 4px rgba(36, 28, 28, 0.294);
+    z-index: 1;
+}
+
+.servicesContainer .service i{
+    padding: 0.5rem;
+    font-size: 2em;
+}
+.servicesContainer .service h3{
+    padding: 0.5rem;
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+.tasteContainer{
+    height: 500px;
+    background: rgba(246, 203, 147, 0.528);
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem;
+    border-radius: 30px 320px 50px 320px;
+}
+
+.tasteData{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tasteData h3{
+    font-size: 2.5em;
+    line-height: 4rem;
+}
+
+.tasteData li{
+    font-size: 1.5em;
+    list-style-position: inside;
+    list-style:"☕  ";
+}
+.tasteImages{
+    height: 300px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.tasteImages img{
+    height: 200px;
+    width: 300px;
+}
+.tasteImages :last-child{
+    top: -100%;
+    left: 5%;
+    position: relative;
+}
+
+.tasteImages img:hover{
+    border: 10px solid crimson;
+    padding: 1rem;
+    z-index: 5;
+}
+
+#taste h2{
+    font-size: 3em;
+    text-align: center;
+    margin: 5% 0 0 40%;
+    border-bottom: 6px double crimson;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.testimonialContainer{
+    height: 500px;
+    display: flex;
+    background: rgba(214, 66, 95, 0.444);
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+    padding: 1rem;
+}
+
+.testimonialContainer .person{
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.testimonialContainer .person img{
+     height:200px;
+     width: 200px;
+     border-radius: 50%;
+     margin: 0 0 1.5rem 0.6rem;
+     border: 12px double #fff;
+}
+.person .fa-star{
+    color: goldenrod;
+    margin-bottom: 0.7rem;
+}
+
+.testimonialContainer .person img:hover{
+    border: none;
+}
+
+#testi h2{
+    font-size: 3em;
+    text-align: center;
+    margin: 5% 0 0 30%;
+    border-bottom: 6px double crimson;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.formContainer{
+    height: 500px;
+    display: flex;
+    margin: 5rem;
+    justify-content: space-between;
+}
+
+#contact h2{
+    font-size: 3em;
+    text-align: center;
+    margin: 5% 0 0 40%;
+    border-bottom: 6px double crimson;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.formContainer img{
+    height: 400px;
+    width: 550px;
+}
+
+.formContainer h3{
+    font-size: 3em;
+    transform: translate(-120%, 30%);
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 600px;
+    margin: -2.3rem 1.9rem 0 0;
+}
+
+.formContainer form label{
+    font-size: 1.3em;
+    margin: 1rem 0 0 1rem;
+    text-transform: capitalize;
+}
+
+.formContainer form input{
+    border: none;
+    padding: 0.7rem;
+    border-radius: 30px;
+    background: rgba(206, 91, 114, 0.287);
+}
+
+.formContainer form textarea{
+    resize: none;
+    border: none;
+    background:  rgba(206, 91, 114, 0.287);
+}
+
+.formContainer form button{
+    align-self: flex-end;
+    padding: 1rem;
+    border: none;
+    margin-top: 0.6rem;
+    border-radius: 30px;
+    background:  rgba(206, 91, 114, 0.287);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.container footer{
+    background: crimson;
+    height: 200px;
+    text-align: center;
+    padding: 3rem;
+}
+footer p{
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 1rem;
+    border-bottom: 2px solid #ffff;
+    display: inline-block;
+}
+footer i{
+    font-size: 2em;
+    margin: 1rem;
+    color: #fff;
+}
+
+@media screen and (max-width:771px) and (min-width:480px){
+    nav{
+        height: 80px;
+        text-align: center;
+        justify-content: center;
+        z-index: 7;
+        width: 771px;
+    }
+    nav .logo{
+       font-size: 2.5em;
+    }
+    nav .navitems{
+        background: rgba(255, 255, 255, 0.832);
+        width: 200px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        z-index: 3;
+        height: 760px;
+    }
+    nav .navitems ul{
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+    nav .navitems ul li{
+        padding: 0 1rem;
+       margin: 0.5rem;
+       font-size: 1em;
+    }
+    nav .hamContainer input{
+        display: block;
+        height: 40px;
+        width: 70px;
+        left: -0%;
+        top: 23%;
+        position: absolute;
+        z-index: 9;
+        opacity: 0;
+    }
+    nav .hamContainer .hamLines{
+        height: 45px;
+        width: 45px;
+        left: 4%;
+        top: 23%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 5;
+    }
+    nav .hamContainer .hamLines .line{
+        height: 5px;
+        width: 58px;
+        background: black;
+    }
+    nav .hamContainer .hamLines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    nav .hamContainer .hamLines .line2{
+        transition: transform 0.4s ease-in-out;
+    }
+    nav .hamContainer .hamLines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    nav .hamContainer input[type="checkbox"]:checked ~ .navitems{
+        display: block;
+        transform: translateY(0 100%);
+    }
+    nav .hamContainer input[type="checkbox"]:checked ~ .hamLines .line1{
+         transform: rotate(45deg);
+    }
+    nav .hamContainer input[type="checkbox"]:checked ~ .hamLines .line2{
+        transform: scaleY(0);
+    }
+    nav .hamContainer input[type="checkbox"]:checked ~ .hamLines .line3{
+        transform: rotate(-45deg);
+    }
+    .intro{
+        height: 700px;
+        width: 770px;
+        background-size: cover;
+        line-height: 40px;
+        /* margin-top: -13%; */
+    }
+    .intro::after{
+     content: "";
+     position: absolute;
+     background: rgba(30, 26, 26, 0.335);
+     height: inherit;
+     width: inherit;
+     color: #fff;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+    .introContent{
+        justify-content: center;
+        align-items: center;
+    }
+    .introContent h1{
+        font-size: 3em;
+        z-index: 2;
+    }
+    .introContent p{
+        font-size: 1.5em;
+        margin-top: 0.9rem;
+        z-index: 2;
+    }
+    .servicesContainer{
+        width: 770px;
+        flex-direction: column;
+        margin: 3em 0 0 0;
+    }
+    #service h2{
+     font-size: 3em;
+     text-align: center;
+     border-bottom: 3px double crimson;
+     margin: 10% 0 0% 30%;
+    }
+    .servicesContainer{
+     margin: 2rem auto;  
+    }
+    .servicesContainer .service{
+        padding: 1rem;
+        line-height: 30px;
+        height: 300px;
+        width: 400px;
+        margin: 2rem auto;
+        align-self: center;
+        box-shadow: 5px 5px 8px 4px rgba(36, 28, 28, 0.294);
+    }
+    .servicesContainer .service i{
+        font-size: 2em;
+    }
+    .servicesContainer .service h3{
+        font-size: 2em;
+    }
+    #taste h2{
+        font-size: 3em;
+        text-align: center;
+        border-bottom: 3px double crimson;
+        margin: 10% 0 5% 37%;
+       }
+    .tasteContainer{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        height: 800px;
+        width: 650px;
+        padding: 0;
+    }
+    .tasteData h3{
+        margin-top: -20%;
+    }
+    .tasteData{
+      margin-bottom: 10%;
+      margin-left: 13%;
+    }
+    .tasteImages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 650px;
+        margin: 3% 0 0 12%;
+    }
+    .tasteImages .img{
+        height: 200px;
+        width: 150px;
+        padding: 0;
+    }
+    .tasteImages :last-child{
+        top: 40%;
+        left: -130%;
+        position: relative;
+    }
+    .tasteImages :nth-child(4){
+        top: -37%;
+        left: -50%;
+        position: relative;
+    }
+    .tasteImages :nth-child(3){
+        top: -30%;
+        left: -90%;
+        position: relative;
+        display: none;
+    }
+    #testi h2{
+        font-size: 2em;
+        text-align: center;
+        border-bottom: 3px double crimson;
+        margin: 10% 0 10% 25%;
+       }
+    .testimonialContainer{
+        height: 900px;
+        width: 550px;
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+    .testimonialContainer .person{
+        margin: 0;
+        height: 300px;
+        width: 500px;
+    }
+    .testimonialContainer .person img{
+        margin: 0;
+        height: 150px;
+        width: 150px;
+    }
+    #contact h2{
+        font-size: 3em;
+        text-align: center;
+        border-bottom: 3px double crimson;
+        margin: 10% 0 10% 34%;
+       }
+       .formContainer{
+        flex-direction: column;
+        height: 400px;
+        width: 700px;
+        justify-content: space-between;
+       }
+       .formContainer img{
+        display: none;
+       }
+       .formContainer h3{
+        display: none;
+       }
+       .formContainer form{
+        margin: -20% 0 0 0;
+       }
+       .container footer{
+        width: 770px;
+       }
+}
+
+@media screen and (max-width: 480px){
+       nav{
+        height: 80px;
+        text-align: center;
+        justify-content: center;
+        z-index: 7;
+        width: 480px;
+    }
+    nav .logo{
+       font-size: 2em;
+       margin-top: 0.8rem;
+    }
+    nav .navitems{
+        background: rgba(255, 255, 255, 0.832);
+        width: 200px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        z-index: 3;
+        height: 760px;
+    }
+    nav .navitems ul{
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+    nav .navitems ul li{
+        padding: 0 1rem;
+       margin: 0.5rem;
+       font-size: 1rem;
+    }
+    nav .hamContainer input{
+        display: block;
+        height: 30px;
+        width: 55px;
+        left: -1%;
+        top: 23%;
+        position: absolute;
+        z-index: 9;
+        opacity: 0;
+    }
+    nav .hamContainer .hamLines{
+        height: 30px;
+        width: 55px;
+        left: 5%;
+        top: 23%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 5;
+    }
+    nav .hamContainer .hamLines .line{
+        height: 5px;
+        width: 40px;
+        background: black;
+    }
+    nav .hamContainer .hamLines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+    nav .hamContainer .hamLines .line2{
+        transition: transform 0.4s ease-in-out;
+    }
+    nav .hamContainer .hamLines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+    nav .hamContainer input[type="checkbox"]:checked ~ .navitems{
+        display: block;
+        transform: translateY(0 100%);
+    }
+    nav .hamContainer input[type="checkbox"]:checked ~ .hamLines .line1{
+         transform: rotate(45deg);
+    }
+    nav .hamContainer input[type="checkbox"]:checked ~ .hamLines .line2{
+        transform: scaleY(0);
+    }
+    nav .hamContainer input[type="checkbox"]:checked ~ .hamLines .line3{
+        transform: rotate(-45deg);
+    }
+       .intro{
+           height: 600px; 
+           width: 480px;
+           background-size: cover;
+           line-height: 40px;
+       }
+       .intro::after{
+        content: "";
+        position: absolute;
+        background: rgba(30, 26, 26, 0.335);
+        height: inherit;
+        width: inherit;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+       .introContent{
+           justify-content: center;
+           align-items: center;
+       }
+       .introContent h1{
+           font-size: 2em;
+           z-index: 2;
+       }
+       .introContent p{
+           font-size: 0.7em;
+           z-index: 2;
+       }
+       .servicesContainer{
+           flex-direction: column;
+       }
+       #service h2{
+        font-size: 2em;
+        text-align: center;
+        border-bottom: 3px double crimson;
+        margin: 10% 0 10% 30%;
+       }
+       .servicesContainer{
+        margin: 2rem auto;  
+       }
+       .servicesContainer .service{
+           padding: 1rem;
+           line-height: 30px;
+           height: 300px;
+           width: 400px;
+           margin: 2rem auto;
+           align-self: center;
+           box-shadow: 5px 5px 8px 4px rgba(36, 28, 28, 0.294);
+       }
+       .servicesContainer .service i{
+           font-size: 2em;
+       }
+       .servicesContainer .service h3{
+           font-size: 2em;
+       }
+       #taste h2{
+        font-size: 2em;
+        text-align: center;
+        border-bottom: 3px double crimson;
+        margin: 3rem 10rem;
+    }
+       .tasteContainer h3{
+        display: none;
+       }
+       .tasteContainer{
+         height: 400px;
+         width: 400px;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         margin: 2rem auto;
+         border-radius: 320px 700px 220px 50px;
+       }
+       .tasteData li{
+        font-size: 1.3em;
+        list-style-position: outside;
+        list-style:"☕  ";
+        text-align: center;
+        align-self: center;
+    }
+      .tasteImages{
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        align-self: center;
+       }
+     .tasteImages img{
+        height: 300px;
+        width: 350px;
+        margin:  1rem;
+     }
+     .tasteImages :last-child{
+         top: 0;
+         left: 0;
+     }
+     .tasteImages img:hover{
+        border: none;
+        padding: 0;
+        z-index: 0;
+    }
+    #testi h2{
+        font-size: 1.5em;
+        text-align: center;
+        border-bottom: 3px double crimson;
+        margin: 3rem 5rem 3rem 7rem;
+    }
+    .testimonialContainer{
+        height: 1000px;
+        flex-direction: column;
+        background: none;
+    }
+    .testimonialContainer .person{
+        text-align: center;
+        margin: 1rem;
+    }
+    .testimonialContainer .person img{
+        height:200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 12px double crimson;
+   } 
+    #contact h2{
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 3px double crimson;
+    margin: 3rem 7rem 3rem 10rem;
+   }
+   .formContainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: -2rem;
+   }
+   .formContainer img{
+      display: none;
+    }
+    .formContainer h3{
+        display: none;
+       }
+    .formContainer form{
+        height: 500px;
+        width: 400px;
+        margin: 5rem 0 5rem 2rem;
+    }
+    .formContainer form label{
+        font-size: 1em;
+        margin: 1rem 0 0 1rem;
+        text-transform: capitalize;
+    }
+    .container footer{
+        height: 200px;
+        width: 480px;
+        text-align: center;
+        top: 0%;
+    }
+
+} 
+
